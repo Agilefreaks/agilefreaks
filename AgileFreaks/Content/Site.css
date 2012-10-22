@@ -1,0 +1,97 @@
+﻿body {
+	background-color:#004d8b;
+	text-align: center;
+}
+
+#page {
+	margin-left:auto;
+	margin-right:auto;
+	width:922px;
+	text-align:center;
+}
+
+#container {
+	margin-left:0 auto;
+	margin-right:0 auto;
+	position:relative;
+	width:922px;
+	height:586px;
+	background-image: url('/Images/logo.png');	
+	background-repeat:no-repeat;
+	background-color:transparent;
+}
+
+#slogan { 
+	float:left;
+	clear:both;
+	position:relative;
+	top:352px;
+	left:367px;
+	background-color:transparent !important;
+	background-image:none;
+}
+
+#we {
+float:left;
+clear:both;
+}
+
+#slideshowHolder { 
+	float:left;
+	background-color:transparent !important;
+}
+
+#slideshowHolder img {
+	background-color:transparent !important;
+	background:none !important;
+	filter:none !important;
+}
+
+#contact {
+	width:100%;
+	float:left;
+	clear:both;
+	position:relative;
+	top:500px;
+	font-family:arial;
+	color:#fff;
+	left:46px;
+
+}
+
+#wallLink {
+cursor:pointer;
+}
+
+#wallpapers {
+	width:100%;
+	float:left;
+	clear:both;
+	position:relative;
+	top:420px;
+	font-family:arial;
+	color:#fff;
+	left:46px;
+
+}
+
+#wallContainer {
+	margin-left:auto;
+	margin-right:auto;
+	display:none;
+}
+
+#wallContainer ul {
+list-style:none;
+margin-left:90px;
+}
+
+#wallContainer li {
+float:left;
+padding:12px;
+}
+
+a {
+	color: #eee;
+	text-decoration:none;
+}
