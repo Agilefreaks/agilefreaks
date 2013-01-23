@@ -1,0 +1,17 @@
+
+.wrap-about-box{
+	margin-left: 25px;
+	width: 460px;
+	top:1600px;
+	position: absolute;
+}
+.team-member{
+	width: 45%;
+	float: left;
+}
+#featuresTab{
+	width: 430px;
+}
+.features-item{
+	width: 45%;
+}

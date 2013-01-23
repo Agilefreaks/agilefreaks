@@ -1,6 +1,17 @@
 $(document).ready(function () {
-	$.backstretch("Content/img/bg.jpg");
+	/* Features tabs */
+    $('#featuresTab a').click(function(e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
 
-	var endTime = new Date(2013, 1 - 1, 25);
-	$('.count-down').countdown({until: endTime});
+	/* testimonial */
+	$('.testimonials-slider').bxSlider({
+	  mode: 'fade',
+	  captions: true,
+	  controls: false
+	});
+
+	/* Placeholder for older browsers */
+	$('input[placeholder], textarea[placeholder]').placeholder();
 });

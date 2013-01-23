@@ -1,7 +1,8 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
+// ReSharper disable CheckNamespace
 namespace Agilefreaks
+// ReSharper restore CheckNamespace
 {
     public class BundleConfig
     {
@@ -10,10 +11,12 @@ namespace Agilefreaks
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
-                        "~/Scripts/jquery.backstretch.js",
-                        "~/Scripts/jquery.countdown.js"));
+                        "~/Scripts/jquery.backstretch.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/main").Include(
+                        "~/Scripts/bootstrap.js",
+                        "~/Scripts/jquery.bxslider.js",
+                        "~/Scripts/jquery.placeholder.js",
                         "~/Scripts/main.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
@@ -29,7 +32,9 @@ namespace Agilefreaks
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                "~/Content/Site.css", 
+                "~/Content/bootstrap.css",
+                "~/Content/bootstrap-responsive.css",
+                "~/Content/Site.css",
                 "~/Content/Style.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(

@@ -4,21 +4,36 @@
     ViewBag.Title = "Agilefreaks";
 }
 
-<!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-<![endif]-->
-<div class="top-bar"></div>
+@Html.Partial("_Header")
 
-<div class="container">
-    <h1 class="logo">
-        <img src="~/Content/img/logo.png" alt=""></h1>
-    <p>We are currently working on a super awesome new site.</p>
-    <div class="count-down-wraper">
-        <span class="time-left">Time left:</span>
-        <div class="count-down">
-        </div>
-
+<!-- Slider -->
+<section id="slider">
+    <div class="container">
+        <h2>Come to the agile side</h2>
+        <span class="tagline">We have clean code</span>
+        <a href="#contact" class="get-in-touch">Get in touch</a>
     </div>
-    <a href="mailto:office@agilefreaks.com" class="send-mail">office@agilefreaks.com</a>
-    <span class="phone">(+40) 745 857479  <i>or</i>  (+40) 747 074372</span>
-</div>
+</section>
+<!-- End Slider -->
+
+<!-- Description -->
+<section id="description">
+    <div class="desc-top-shadow"></div>
+    <div class="desc-top-bar"></div>
+    <div class="container">
+        <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</h2>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+</section>
+<!-- End Description -->
+
+@Html.Partial("_Features")
+
+@Html.Partial("_Quotes")
+
+@Html.Partial("_AboutUs")
+
+@Html.Partial("_Visit")
+
+@Html.Partial("_Contact")
