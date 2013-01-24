@@ -17,7 +17,8 @@ namespace Agilefreaks
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/jquery.bxslider.js",
                         "~/Scripts/jquery.placeholder.js",
-                        "~/Scripts/main.js"));
+                        "~/Scripts/main.js",
+                        "~/Scripts/mouseFlow.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));
