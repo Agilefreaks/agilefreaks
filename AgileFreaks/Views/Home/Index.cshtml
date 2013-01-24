@@ -1,0 +1,39 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Agilefreaks";
+}
+
+@Html.Partial("_Header")
+
+<!-- Slider -->
+<section id="slider">
+    <div class="container">
+        <h2>Come to the agile side</h2>
+        <span class="tagline">We have clean code</span>
+        <a href="#contact" class="get-in-touch">Get in touch</a>
+    </div>
+</section>
+<!-- End Slider -->
+
+<!-- Description -->
+<section id="description">
+    <div class="desc-top-shadow"></div>
+    <div class="desc-top-bar"></div>
+    <div class="container">
+        <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</h2>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+</section>
+<!-- End Description -->
+
+@Html.Partial("_Features")
+
+@Html.Partial("_Quotes")
+
+@Html.Partial("_AboutUs")
+
+@Html.Partial("_Visit")
+
+@Html.Partial("_Contact")
