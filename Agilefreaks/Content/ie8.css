@@ -1,0 +1,42 @@
+a.get-in-touch, a.get-in-touch:hover,{
+	border-top: solid 1px #ff9278;
+}
+.visit-white-border-double-up, .contact-white-line{
+	background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#20ffffff,endColorstr=#20ffffff); 
+       zoom: 1;
+}
+.contact-white-line{
+	background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#20ffffff,endColorstr=#20ffffff); 
+       zoom: 1;
+}
+.visit-black-border-double-bottom {
+	background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#25000000,endColorstr=#25000000); 
+       zoom: 1;
+}
+.visit-black-border, .contact-black-line {
+	background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#20000000,endColorstr=#20000000); 
+       zoom: 1;
+}
+.visit-action, .contact-details {
+
+	background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#20000000,endColorstr=#20000000); 
+       zoom: 1;
+}
+.team-member{
+	width: 488px;
+	height: 292px;
+	border: 1px transparent;
+}
+.team-member:hover, .team-member:active {
+	border: solid 1px #ccc;
+	padding-top: 19px;
+	padding-left: 19px;
+	background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#40ffffff,endColorstr=#40ffffff); 
+       zoom: 1;
+}

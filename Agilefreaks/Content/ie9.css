@@ -1,0 +1,12 @@
+a.testimonials, a.testimonials:hover, 
+a.join-our-team, a.join-our-team:hover,
+a.join-us, a.join-us:hover,
+a.get-in-touch, a.get-in-touch:hover,
+button.get-in-touch, button.get-in-touch:hover{
+	filter: none;
+}
+a.join-us, a.join-us:hover{
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	overflow: hidden;
+}
