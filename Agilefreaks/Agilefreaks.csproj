@@ -268,7 +268,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\_Header.cshtml" />
     <Content Include="Views\Home\_Features.cshtml" />
-    <Content Include="Views\Home\_Quotes.cshtml" />
+    <Content Include="Views\Home\_Testimonials.cshtml" />
     <Content Include="Views\Home\_AboutUs.cshtml" />
     <Content Include="Views\Home\_Visit.cshtml" />
     <Content Include="Views\Home\_Contact.cshtml" />
