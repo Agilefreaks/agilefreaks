@@ -11,12 +11,15 @@ namespace Agilefreaks
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
-                        "~/Scripts/jquery.backstretch.js"));
+                        "~/Scripts/jquery.backstretch.js",
+                        "~/Scripts/jquery.bxslider.js",
+                        "~/Scripts/jquery.placeholder.js",
+                        "~/Scripts/jquery.scrollTo.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/main").Include(
                         "~/Scripts/bootstrap.js",
-                        "~/Scripts/jquery.bxslider.js",
-                        "~/Scripts/jquery.placeholder.js",
+                        "~/Scripts/waypoints.js",
+                        "~/Scripts/waypoints-sticky.js",
                         "~/Scripts/main.js",
                         "~/Scripts/mouseFlow.js"));
 
@@ -35,8 +38,7 @@ namespace Agilefreaks
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/bootstrap.css",
                 "~/Content/bootstrap-responsive.css",
-                "~/Content/Site.css",
-                "~/Content/Style.css"));
+                "~/Content/style.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

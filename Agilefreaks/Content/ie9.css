@@ -2,6 +2,7 @@ a.testimonials, a.testimonials:hover,
 a.join-our-team, a.join-our-team:hover,
 a.join-us, a.join-us:hover,
 a.get-in-touch, a.get-in-touch:hover,
+.navbar .btn-navbar, .navbar .btn-navbar:hover,
 button.get-in-touch, button.get-in-touch:hover{
 	filter: none;
 }

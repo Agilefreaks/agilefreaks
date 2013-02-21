@@ -40,3 +40,9 @@ a.get-in-touch, a.get-in-touch:hover,{
        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#40ffffff,endColorstr=#40ffffff); 
        zoom: 1;
 }
+.visit-action{
+	min-height: 45px;
+}
+.navbar{
+	border-bottom: solid 1px #b8c4cc;
+}
