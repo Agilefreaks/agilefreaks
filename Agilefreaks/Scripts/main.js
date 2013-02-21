@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 	/* Slider image */
-	$("#slider").backstretch("~/Content/img/workspace_01.jpg");
+	$("#slider").backstretch("../Content/img/workspace_01.jpg");
 
 
 	/* Stiky navigation */	
