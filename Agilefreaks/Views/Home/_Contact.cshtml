@@ -15,6 +15,7 @@
                 @using (Html.BeginForm("SendEmail", "ContactUs", FormMethod.Post, new { @class = "contact-form" }))
                 {
                     @Html.ValidationSummary()
+                    <input id="notification" type="hidden" value="@TempData["Notification"]"/>
                     <fieldset>
                         <div class="input-wrap">
                             <span class="name-icn"></span>
@@ -38,10 +39,12 @@
                         <span>Office:</span>Str. Tg Vinului, nr. 9<br />
                         Sibiu, Romania, 550191   
                    
+                   
                     </div>
                     <div class="details-item">
                         <span>Phone:</span>+40 745 857479<br />
                         +40 747 074372
+                   
                    
                     </div>
                     <div class="details-item"><span>Email:</span>office@agilefreaks.com</div>
@@ -51,5 +54,3 @@
         <div class="container-footer"><span>Copyright © 2009-2012 Agile Freaks.</span></div>
     </div>
 </section>
-
-

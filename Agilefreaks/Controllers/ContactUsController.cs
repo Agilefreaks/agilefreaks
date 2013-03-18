@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
 using System.Net;
 using System.Net.Mail;
 using System.Web.Mvc;
@@ -22,11 +23,22 @@ namespace Agilefreaks.Controllers
                 message.Subject = model.Name;
                 message.Text = model.Message;
                 message.AddTo(ContactEmail);
+                var notificationMessage = "Message sent.";
 
-                var credentials = new NetworkCredential(ConfigurationManager.AppSettings["SendGridUsername"], ConfigurationManager.AppSettings["SendGridPassword"]);
-                var transportSMTP = SMTP.GetInstance(credentials);
+                try
+                {
+                    var credentials = new NetworkCredential(ConfigurationManager.AppSettings["SendGridUsername"], ConfigurationManager.AppSettings["SendGridPassword"]);
+                    var transportSMTP = SMTP.GetInstance(credentials);
 
-                transportSMTP.Deliver(message);
+                    transportSMTP.Deliver(message);
+                }
+                catch (Exception ex)
+                {
+                    notificationMessage = "Error on sending message. Please try again!";
+                }
+
+
+                TempData["Notification"] = notificationMessage;
             }
 
             return Redirect(Url.RouteUrl(new { controller = "Home", action = "Index" }) + "#" + "contact");
