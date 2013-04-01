@@ -264,7 +264,9 @@
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\mouseFlow.js" />
+    <Content Include="Scripts\waypoints-sticky.js" />
     <Content Include="Scripts\waypoints-sticky.min.js" />
+    <Content Include="Scripts\waypoints.js" />
     <Content Include="Scripts\waypoints.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -310,9 +312,9 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>20374</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:1618/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
