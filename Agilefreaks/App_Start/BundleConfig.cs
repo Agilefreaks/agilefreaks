@@ -38,7 +38,8 @@ namespace Agilefreaks
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/bootstrap.css",
                 "~/Content/bootstrap-responsive.css",
-                "~/Content/style.css"));
+                "~/Content/style.css",
+                "~/Scripts/humane/jackedup.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
