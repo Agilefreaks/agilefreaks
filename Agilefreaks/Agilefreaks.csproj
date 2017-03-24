@@ -172,6 +172,8 @@
     <Content Include="Content\ie8.css" />
     <Content Include="Content\ie9.css" />
     <Content Include="Content\img\active-tab.png" />
+    <Content Include="Content\img\IftodeMihai.png" />
+    <Content Include="Content\img\CazacuTudor.png" />
     <Content Include="Content\img\bg-lines.png" />
     <Content Include="Content\img\bg_aboutus.png" />
     <Content Include="Content\img\bg_contact.jpg" />
