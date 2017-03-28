@@ -116,7 +116,7 @@ textarea:focus, input[type="text"]:focus {
   -ms-transition: width 0.3s ease;
   transition: width 0.3s ease; }
 
-.boxSize, #featuresTab li a, .features-item, .testimonials-slider li p, .wrap-about-box, .about-box, .team-member, .visit-action, .contact-details {
+.boxSize, #featuresTab li a, .features-item, .testimonials-slider div p, .wrap-about-box, .about-box, .team-member, .visit-action, .contact-details {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -532,7 +532,7 @@ textarea:focus, input[type="text"]:focus {
   bottom: 50px;
   right: 70px; }
 
-.testimonials-slider li p {
+.testimonials-slider div p {
   color: #627b8c;
   padding-left: 150px;
   padding-right: 150px;
@@ -1265,10 +1265,10 @@ textarea {
 /********************* End Responsive Features *********************/
 /********************* Responsive Testimonials *********************/
 @media (min-width: 1300px) {
-  .testimonials-slider li p {
+  .testimonials-slider div p {
     line-height: 24px; } }
 @media (min-width: 980px) and (max-width: 1299px) {
-  .testimonials-slider li p {
+  .testimonials-slider div p {
     line-height: 24px;
     font-size: 1em; }
 
@@ -1281,7 +1281,7 @@ textarea {
   .testimonials {
     padding-top: 30px; }
 
-  .testimonials-slider li p {
+  .testimonials-slider div p {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 1em; }
@@ -1300,7 +1300,7 @@ textarea {
   .testimonials {
     padding-top: 30px; }
 
-  .testimonials-slider li p {
+  .testimonials-slider div p {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 0.925em; }
@@ -1317,7 +1317,7 @@ textarea {
   .bx-viewport {
     height: 135px!important; }
 
-  .testimonials-slider li p {
+  .testimonials-slider div p {
     padding-left: 40px;
     padding-right: 40px;
     font-size: 13px;
