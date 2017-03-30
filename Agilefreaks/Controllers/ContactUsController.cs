@@ -10,6 +10,7 @@ namespace Agilefreaks.Controllers
     public class ContactUsController : Controller
     {
         private const string ContactEmail = "office@agilefreaks.com";
+        private const string SenderEmail = "office@agilefreaks.com";
 
         [HttpPost]
         public async Task<ActionResult> SendEmail(ContactUsModel model)
@@ -31,9 +32,10 @@ namespace Agilefreaks.Controllers
             return new PostmarkMessage
             {
                 To = ContactEmail,
-                From = model.Email,
+                From = SenderEmail,
                 Subject = model.Name,
-                TextBody = model.Message
+                TextBody = model.Message,
+                ReplyTo = model.Email
             };
         }
         

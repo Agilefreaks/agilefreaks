@@ -20,10 +20,10 @@ namespace Agilefreaks.Tests
             _postmarkMessage = new PostmarkMessage
             {
                 To = "office@agilefreaks.com",
-                From = "test@test.com",
-                TrackOpens = true,
+                From = "office@agilefreaks.com",
                 Subject = "A jobless man",
-                TextBody = "Hire me!"
+                TextBody = "Hire me!",
+                ReplyTo = "test@test.com"
             };
         }
 
