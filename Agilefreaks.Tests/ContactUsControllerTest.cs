@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Agilefreaks.Controllers;
 using Agilefreaks.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
