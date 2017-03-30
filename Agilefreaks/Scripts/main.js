@@ -1,41 +1,40 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     /* Slider image */
     $("#slider").backstretch("../Content/img/workspace_01.jpg");
 
 
     /* Stiky navigation */
-
-    $('#sticky-navigation-wrap').waypoint('sticky', {
+    var sticky = new Waypoint.Sticky({
+        element: $('#sticky-navigation-wrap'),
         stuckClass: 'sticky',
         offset: -300
     });
 
     /* Animate smooth scroll on page */
-    $('.navbar ul li a').bind("click", function (e) {
-        e.preventDefault();
-        target = this.hash;
+    $('.navbar ul li a').bind("click",
+        function(e) {
+            e.preventDefault();
+            target = this.hash;
 
-        topOffset = -100;
-        if ($(this).hasClass('features')) {
-            topOffset = -160;
-        }
-        $.scrollTo(target, 1000, { offset: topOffset });
-
-    })
-
+            topOffset = -100;
+            if ($(this).hasClass('features')) {
+                topOffset = -160;
+            }
+            $.scrollTo(target, 1000, { offset: topOffset });
+        });
 
     /* Features tabs */
-    $('#featuresTab a').click(function (e) {
+    $('#featuresTab a').click(function(e) {
         e.preventDefault();
         $(this).tab('show');
-    })
+    });
 
     /* testimonial */
-    $('.testimonials-slider').bxSlider({
-        mode: 'fade',
-        captions: true,
-        controls: false
+    $('.testimonials-slider').slick({
+        infinite: false,
+        dots: true,
+        arrows: false
     });
 
     /* Placeholder for older browsers */
