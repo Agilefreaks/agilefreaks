@@ -54,7 +54,7 @@ namespace Agilefreaks.Controllers
                 TempData["Notification"] = sendResult.Status == PostmarkStatus.Success ? "Message sent." : errorMessage;
                 sendStatus = sendResult.Status;
             }
-            catch(Exception e)
+            catch
             {
                 TempData["Notification"] = errorMessage;
             }
