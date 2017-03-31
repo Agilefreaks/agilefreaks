@@ -257,7 +257,6 @@
     <Content Include="Content\font\BebasNeue-webfont.eot" />
     <Content Include="Content\font\BebasNeue-webfont.ttf" />
     <Content Include="Content\font\BebasNeue-webfont.woff" />
-    <Content Include="Robots.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\html5-3.6-respond-1.1.0.min.js" />
     <Content Include="Scripts\humane\humane.min.js" />
