@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Agilefreaks.Controllers;
 using Agilefreaks.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -22,7 +23,7 @@ namespace Agilefreaks.Tests
                 To = "office@agilefreaks.com",
                 From = "office@agilefreaks.com",
                 Subject = "A jobless man",
-                TextBody = "Hire me!",
+                TextBody = "Hire me!" + Environment.NewLine + "test@test.com",
                 ReplyTo = "test@test.com"
             };
         }
@@ -39,10 +40,10 @@ namespace Agilefreaks.Tests
 
             var result = _contactUsController.CreateMessage(_contactUsModel);
 
-            Assert.AreSame(_postmarkMessage.To, result.To);
-            Assert.AreSame(_postmarkMessage.From, result.From);
-            Assert.AreSame(_postmarkMessage.Subject, result.Subject);
-            Assert.AreSame(_postmarkMessage.TextBody, result.TextBody);
+            Assert.AreEqual(_postmarkMessage.To, result.To);
+            Assert.AreEqual(_postmarkMessage.From, result.From);
+            Assert.AreEqual(_postmarkMessage.Subject, result.Subject);
+            Assert.AreEqual(_postmarkMessage.TextBody, result.TextBody);
         }
 
         [TestMethod]

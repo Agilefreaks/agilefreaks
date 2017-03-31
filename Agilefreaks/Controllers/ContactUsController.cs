@@ -34,7 +34,7 @@ namespace Agilefreaks.Controllers
                 To = ContactEmail,
                 From = SenderEmail,
                 Subject = model.Name,
-                TextBody = model.Message,
+                TextBody = model.Message + Environment.NewLine + model.Email,
                 ReplyTo = model.Email
             };
         }
