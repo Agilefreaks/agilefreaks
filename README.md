@@ -1,4 +1,0 @@
-Agilefreaks
-===========
-
-Our home page
