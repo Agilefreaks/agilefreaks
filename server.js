@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
+require('dotenv').config();
+
 /**
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('./app');
 var debug = require('debug')('agilefreaks:server');
 var http = require('http');
 
