@@ -1200,7 +1200,7 @@ textarea {
 /********************* Responsive Slider *********************/
 @media (max-width: 979px) {
   #slider {
-    height: 380px; }
+    height: 420px; }
 
   #slider h2 {
     margin-top: 130px; } }
