@@ -11,6 +11,12 @@ var config = require('./config');
 
 var app = express();
 
+function cacheControl(req, res, next) {
+  res.header('Cache-Control', `max-age=604800`);
+
+  next();
+}
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 hbs.registerPartials(__dirname + '/views/partials');
@@ -26,7 +32,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(cacheControl, express.static(path.join(__dirname, 'public')));
 
 app.use(indexRouter);
 app.use(contactRouter);
