@@ -13,6 +13,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerHelper('currentYear', function() { return new Date().getFullYear() });
 app.set('view engine', 'hbs');
 
 app.use(logger('dev'));
