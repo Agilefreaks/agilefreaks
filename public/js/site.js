@@ -42,9 +42,13 @@
     /* Placeholder for older browsers */
     $('input[placeholder], textarea[placeholder]').placeholder();
 
-    /* notification */
-    var notification = $('#notification').val();
-    if (notification !== '') {
-        humane.log(notification);
+    var errorMessage = $('#error-message').val();
+    if (errorMessage !== '') {
+        humane.log(errorMessage, { addnCls: 'humane-jackedup-error' });
+    }
+
+    var successMessage = $('#success-message').val();
+    if (successMessage !== '') {
+        humane.log(successMessage, { addnCls: 'humane-jackedup-success' });
     }
 });
