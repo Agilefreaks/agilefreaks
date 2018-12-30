@@ -7,6 +7,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var contactRouter = require('./routes/contact');
+var config = require('./config');
 
 var app = express();
 
@@ -14,7 +15,10 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 hbs.registerPartials(__dirname + '/views/partials');
 hbs.registerHelper('currentYear', function () {
-  return new Date().getFullYear()
+  return new Date().getFullYear();
+});
+hbs.registerHelper('contactEmail', function () {
+  return config.contactEmail;
 });
 app.set('view engine', 'hbs');
 

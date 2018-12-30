@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const sgMail = require('@sendgrid/mail');
-const toEmail = "office@agilefreaks.com";
+const config = require('../config');
+const toEmail = config.contactEmail;
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
