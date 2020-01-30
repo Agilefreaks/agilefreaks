@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Sharp Sans No1 Medium";
+    src:url("../fonts/Sharp Sans No1 - Medium.otf") format("opentype");;
+}
+
+@font-face {
+    font-family: "Sharp Sans No1 Bold";
+    src:url("../fonts/Sharp Sans No1 - Bold.otf") format("opentype");;
+}
+
+@font-face {
+    font-family: "Sharp Sans No1 Semibold";
+    src:url("../fonts/Sharp Sans No1 - Semibold.otf") format("opentype");;
+}
+
+@font-face {
+    font-family: "Bradley Hand Bold";
+    src:url("../fonts/Bradley Hand Bold.otf") format("opentype");;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../images/bg.svg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-description {
+    font-size: 4.5em;
+    font-family: "Sharp Sans No1 Semibold";
+    color: white;
+    margin: 0
+}
+
+.second-first-description {
+    font-size: 2em;
+    font-family: "Sharp Sans No1 Medium";
+    color: white;
+    margin-top: 6%;
+    margin-bottom: 0;
+}
+.second-description {
+    font-size: 2em;
+    font-family: "Sharp Sans No1 Medium";
+    color: white;
+    margin: 0;
+}
+
+.button {
+  background-color: #F5E277;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-top: 2%;
+  color: royalblue;
+}
+
+#inner {
+  display: table;
+  margin: 0 auto;
+  padding-top: 6%;
+  font-size: 1.5em;
+  font-family: "Sharp Sans No1 Medium";
+  color: white;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: #426BCE;
+  border-radius: 50%;
+  display: block;
+  margin-top: .1em;
+  margin-bottom: .1em;
+}
+
+#big-dot-div {
+  display: table;
+  margin: 0 auto;
+  font-size: .8em;
+  font-family: arial;
+  color: white;
+  position: fixed;
+  left: 54%;
+  top: 90%;
+  transform: translate(-50%, -50%);  
+}
+
+.big-dot {
+  height: 5em;
+  width: 5em;
+  background-color: #F5E277;
+  border-radius: 50%;
+  display: block;
+}
+
+.pos-div {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+@media (max-width: 900px) {
+    .main-description {
+        font-size: 2.1em !important;
+    }
+    .second-first-description {
+    font-size: 1.7em;
+}
+    .second-description {
+    font-size: 1.7em !important;
+}
+    #big-dot-div {
+  top: 85%;
+}
+    #inner {
+  font-size: 1.0em;
+}
+}
+
+@media (max-height: 900px) {
+    .main-description {
+        font-size: 2.1em !important;
+    }
+    .second-first-description {
+    font-size: 1.7em;
+}
+    .second-description {
+    font-size: 1.7em !important;
+}
+    #big-dot-div {
+  top: 95%;
+}
+    #inner {
+        font-size: 1.0em;
+        padding-top: 0%;
+}
+}
