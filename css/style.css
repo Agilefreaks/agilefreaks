@@ -51,7 +51,6 @@ body, html {
     font-size: 2em;
     font-family: "Sharp Sans No1 Medium";
     color: white;
-    margin-top: 6%;
     margin-bottom: 0;
 }
 .second-description {
@@ -71,14 +70,13 @@ body, html {
   display: inline-block;
   font-size: 1.5em;
   cursor: pointer;
-  margin-top: 2%;
   color: royalblue;
 }
 
 #inner {
   display: table;
   margin: 0 auto;
-  padding-top: 6%;
+  padding-top: 2%;
   font-size: 1.5em;
   font-family: "Sharp Sans No1 Medium";
   color: white;
@@ -90,18 +88,18 @@ body, html {
   background-color: #426BCE;
   border-radius: 50%;
   display: block;
-  margin-top: .1em;
   margin-bottom: .1em;
 }
 
 #big-dot-div {
-  display: table;
+  display:flex;
+  justify-content:center;
+  flex-direction: row;
   margin: 0 auto;
-  font-size: .8em;
-  font-family: arial;
   color: white;
   position: fixed;
-  left: 54%;
+    text-align: center;
+  left: 56%;
   top: 90%;
   transform: translate(-50%, -50%);  
 }
@@ -111,7 +109,16 @@ body, html {
   width: 5em;
   background-color: #F5E277;
   border-radius: 50%;
-  display: block;
+  display: inline-block;
+}
+
+.new-website {
+    font-size: 2em;
+    font-family: "Bradley Hand Bold";
+    -webkit-transform: rotate(-15deg); 
+    -moz-transform: rotate(-15deg); 
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    padding-left: 15px;
 }
 
 .pos-div {
@@ -119,6 +126,40 @@ body, html {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);  
+}
+
+@media (max-width: 1200px) {
+    .main-description {
+        font-size: 2.6em !important;
+    }
+    .second-first-description {
+    font-size: 1.9em;
+}
+    .second-description {
+    font-size: 1.9em !important;
+}
+    #big-dot-div {
+  top: 87% !important;
+        left: 60%; !important;
+}
+    #inner {
+  font-size: 1.5em !important;
+        padding-top: 3% !important;
+}
+    .button {
+        font-size: 1.2em !important;
+    }
+    .big-dot {
+      height: 4.0em !important;
+      width: 4.0em !important;
+    }
+}
+
+@media (max-width: 1900px) {
+    #big-dot-div {
+  top: 87% !important;
+        left: 60%; !important;
+}
 }
 
 @media (max-width: 900px) {
@@ -132,14 +173,23 @@ body, html {
     font-size: 1.7em !important;
 }
     #big-dot-div {
-  top: 85%;
+  top: 87% !important;
 }
     #inner {
-  font-size: 1.0em;
+  font-size: 1.5em !important;
+        padding-top: 3% !important;
 }
+    .button {
+        font-size: 1.2em !important;
+    }
+    .big-dot {
+      height: 4.0em !important;
+      width: 4.0em !important;
+    }
 }
 
-@media (max-height: 900px) {
+
+@media (max-width: 700px) {
     .main-description {
         font-size: 2.1em !important;
     }
@@ -150,10 +200,75 @@ body, html {
     font-size: 1.7em !important;
 }
     #big-dot-div {
-  top: 95%;
+  top: 87% !important;
 }
     #inner {
-        font-size: 1.0em;
-        padding-top: 0%;
+  font-size: 1.0em !important;
 }
+    .button {
+        font-size: 1.4em !important;
+    }
+    .big-dot {
+      height: 3.0em !important;
+      width: 3.0em !important;
+    }
+    .new-website {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-height: 900px) {
+    .main-description {
+        font-size: 1.7em !important;
+    }
+    .second-first-description {
+        font-size: 1.3em;
+    }
+    .second-description {
+        font-size: 1.3em !important;
+    }
+    #big-dot-div {
+        top: 87% !important;
+    }
+    #inner {
+        font-size: 1.0em !important;
+    }
+    .button {
+        font-size: 1.2em !important;
+    }
+    .big-dot {
+      height: 2.2em !important;
+      width: 2.2em !important;
+    }
+    .new-website {
+        font-size: 1em;
+    }
+}
+
+@media (max-height: 800px) {
+    .main-description {
+        font-size: 1.5em !important;
+    }
+    .second-first-description {
+    font-size: 1.2em;
+}
+    .second-description {
+    font-size: 1.2em !important;
+}
+    #big-dot-div {
+        top: 87% !important;
+    }
+    #inner {
+        font-size: 1.0em !important;
+    }
+    .button {
+        font-size: 1.0em !important;
+    }
+    .big-dot {
+      height: 2em !important;
+      width: 2em !important;
+    }
+    .new-website {
+        font-size: 1em;
+    }
 }
