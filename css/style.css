@@ -74,7 +74,7 @@ body, html {
 }
 
 #inner {
-  display: table;
+  display: block;
   margin: 0 auto;
   padding-top: 2%;
   font-size: 1.5em;
@@ -89,6 +89,10 @@ body, html {
   border-radius: 50%;
   display: block;
   margin-bottom: .1em;
+}
+
+.dot-divider {
+    margin: 0 10px;
 }
 
 #big-dot-div {
@@ -126,6 +130,19 @@ body, html {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);  
+}
+
+.contact {
+    max-width: 750px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+address a {
+    color: white;
 }
 
 @media (max-width: 1200px) {
