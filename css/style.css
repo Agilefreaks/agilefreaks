@@ -44,7 +44,7 @@ body, html {
     font-size: 4.5em;
     font-family: "Sharp Sans No1 Semibold";
     color: white;
-    margin: 0
+    margin: 0 0 0.7em 0;
 }
 
 .second-first-description {
@@ -137,12 +137,18 @@ body, html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
+    margin: 15px auto;
     padding: 0 10px;
 }
 
 address a {
     color: white;
+}
+
+.description {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 85%;
 }
 
 @media (max-width: 1200px) {
