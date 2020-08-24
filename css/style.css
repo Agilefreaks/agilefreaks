@@ -1,59 +1,59 @@
 @font-face {
     font-family: "Sharp Sans No1 Medium";
-    src:url("../fonts/Sharp Sans No1 - Medium.otf") format("opentype");;
+    src: url("../fonts/Sharp Sans No1 - Medium.otf") format("opentype");;
 }
 
 @font-face {
     font-family: "Sharp Sans No1 Bold";
-    src:url("../fonts/Sharp Sans No1 - Bold.otf") format("opentype");;
+    src: url("../fonts/Sharp Sans No1 - Bold.otf") format("opentype");;
 }
 
 @font-face {
     font-family: "Sharp Sans No1 Semibold";
-    src:url("../fonts/Sharp Sans No1 - Semibold.otf") format("opentype");;
+    src: url("../fonts/Sharp Sans No1 - Semibold.otf") format("opentype");;
 }
 
 @font-face {
     font-family: "Bradley Hand Bold";
-    src:url("../fonts/Bradley Hand Bold.otf") format("opentype");;
+    src: url("../fonts/Bradley Hand Bold.otf") format("opentype");;
 }
 
 body, html {
-  height: 100%;
-  margin: 0;
+    height: 100%;
+    margin: 0;
 }
 
 .bg {
-  /* The image used */
-  background-image: url("../images/bg-min.png");
+    /* The image used */
+    background-image: url("../images/bg-min.png");
 
-  /* Full height */
-  height: 100%; 
+    /* Full height */
+    height: 100%;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
-.main-description {
+.description {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 85%;
+}
+
+.description__header {
     font-size: 4.5em;
     font-family: "Sharp Sans No1 Semibold";
     color: white;
-    margin: 0
+    margin: 0 0 0.7em 0;
 }
 
-.second-first-description {
-    font-size: 2em;
-    font-family: "Sharp Sans No1 Medium";
-    color: white;
-    margin-bottom: 0;
-}
-.second-description {
+.description__paragraph {
     font-size: 2em;
     font-family: "Sharp Sans No1 Medium";
     color: white;
@@ -61,213 +61,245 @@ body, html {
 }
 
 .button {
-  background-color: #F5E277;
-  border: none;
-  border-radius: 20px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.5em;
-  cursor: pointer;
-  color: royalblue;
+    background-color: #F5E277;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: royalblue;
 }
 
 #inner {
-  display: table;
-  margin: 0 auto;
-  padding-top: 2%;
-  font-size: 1.5em;
-  font-family: "Sharp Sans No1 Medium";
-  color: white;
+    display: block;
+    margin: 0 auto;
+    padding-top: 2%;
+    font-size: 1.5em;
+    font-family: "Sharp Sans No1 Medium";
+    color: white;
 }
 
-.dot {
-  height: 6px;
-  width: 6px;
-  background-color: #426BCE;
-  border-radius: 50%;
-  display: block;
-  margin-bottom: .1em;
+.divider {
+    margin: 0 10px;
+}
+
+.divider__dot {
+    height: 6px;
+    width: 6px;
+    background-color: #426BCE;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: .1em;
 }
 
 #big-dot-div {
-  display:flex;
-  justify-content:center;
-  flex-direction: row;
-  margin: 0 auto;
-  color: white;
-  position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+    color: white;
+    position: fixed;
     text-align: center;
-  left: 56%;
-  top: 90%;
-  transform: translate(-50%, -50%);  
+    left: 56%;
+    top: 90%;
+    transform: translate(-50%, -50%);
 }
 
 .big-dot {
-  height: 5em;
-  width: 5em;
-  background-color: #F5E277;
-  border-radius: 50%;
-  display: inline-block;
+    height: 5em;
+    width: 5em;
+    background-color: #F5E277;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .new-website {
     font-size: 2em;
     font-family: "Bradley Hand Bold";
-    -webkit-transform: rotate(-15deg); 
-    -moz-transform: rotate(-15deg); 
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
     padding-left: 15px;
 }
 
 .pos-div {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);  
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact {
+    max-width: 750px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px auto;
+    padding: 0 10px;
+}
+
+.contact__address {
+    color: white;
 }
 
 @media (max-width: 1200px) {
-    .main-description {
+    .description__header {
         font-size: 2.6em !important;
     }
-    .second-first-description {
-    font-size: 1.9em;
-}
-    .second-description {
-    font-size: 1.9em !important;
-}
+
+    .description__paragraph {
+        font-size: 1.9em !important;
+    }
+
     #big-dot-div {
-  top: 87% !important;
-        left: 60%; !important;
-}
+        top: 87% !important;
+        left: 60%;
+    !important;
+    }
+
     #inner {
-  font-size: 1.5em !important;
+        font-size: 1.5em !important;
         padding-top: 3% !important;
-}
+    }
+
     .button {
         font-size: 1.2em !important;
     }
+
     .big-dot {
-      height: 4.0em !important;
-      width: 4.0em !important;
+        height: 4.0em !important;
+        width: 4.0em !important;
     }
 }
 
 @media (max-width: 1900px) {
     #big-dot-div {
-  top: 87% !important;
-        left: 60%; !important;
-}
+        top: 87% !important;
+        left: 60%;
+    !important;
+    }
 }
 
 @media (max-width: 900px) {
-    .main-description {
+    .description__header {
         font-size: 2.1em !important;
     }
-    .second-first-description {
-    font-size: 1.7em;
-}
-    .second-description {
-    font-size: 1.7em !important;
-}
+
+    .description__paragraph {
+        font-size: 1.7em !important;
+    }
+
     #big-dot-div {
-  top: 87% !important;
-}
+        top: 87% !important;
+    }
+
     #inner {
-  font-size: 1.5em !important;
+        font-size: 1.5em !important;
         padding-top: 3% !important;
-}
+    }
+
     .button {
         font-size: 1.2em !important;
     }
+
     .big-dot {
-      height: 4.0em !important;
-      width: 4.0em !important;
+        height: 4.0em !important;
+        width: 4.0em !important;
     }
 }
 
 
 @media (max-width: 700px) {
-    .main-description {
+    .description__header {
         font-size: 2.1em !important;
     }
-    .second-first-description {
-    font-size: 1.7em;
-}
-    .second-description {
-    font-size: 1.7em !important;
-}
+
+    .description__paragraph {
+        font-size: 1.7em !important;
+    }
+
     #big-dot-div {
-  top: 87% !important;
-}
+        top: 87% !important;
+    }
+
     #inner {
-  font-size: 1.0em !important;
-}
+        font-size: 1.0em !important;
+    }
+
     .button {
         font-size: 1.4em !important;
     }
+
     .big-dot {
-      height: 3.0em !important;
-      width: 3.0em !important;
+        height: 3.0em !important;
+        width: 3.0em !important;
     }
+
     .new-website {
         font-size: 1.2em;
     }
 }
 
 @media (max-height: 900px) {
-    .main-description {
+    .description__header {
         font-size: 1.7em !important;
     }
-    .second-first-description {
-        font-size: 1.3em;
-    }
-    .second-description {
+
+    .description__paragraph {
         font-size: 1.3em !important;
     }
+
     #big-dot-div {
         top: 87% !important;
     }
+
     #inner {
         font-size: 1.0em !important;
     }
+
     .button {
         font-size: 1.2em !important;
     }
+
     .big-dot {
-      height: 2.2em !important;
-      width: 2.2em !important;
+        height: 2.2em !important;
+        width: 2.2em !important;
     }
+
     .new-website {
         font-size: 1em;
     }
 }
 
 @media (max-height: 800px) {
-    .main-description {
+    .description__header {
         font-size: 1.5em !important;
     }
-    .second-first-description {
-    font-size: 1.2em;
-}
-    .second-description {
-    font-size: 1.2em !important;
-}
+
+    .description__paragraph {
+        font-size: 1.2em !important;
+    }
+
     #big-dot-div {
         top: 87% !important;
     }
+
     #inner {
         font-size: 1.0em !important;
     }
+
     .button {
         font-size: 1.0em !important;
     }
+
     .big-dot {
-      height: 2em !important;
-      width: 2em !important;
+        height: 2em !important;
+        width: 2em !important;
     }
+
     .new-website {
         font-size: 1em;
     }
